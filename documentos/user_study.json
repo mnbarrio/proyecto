@@ -1,0 +1,117 @@
+{
+    "user": {
+        "gender": "male",
+        "age": "18-24",
+        "degree": "Estudiante",
+        "group": "A1",
+        "id": "6141a9299bbe"
+    },
+    "tasks": [
+        [
+            {
+                "characteristic": ,
+                "time": 934.499,
+                "for": "System A"
+            },
+            {
+                "characteristic": ,
+                "time": 913.282,
+                "for": "System A"
+            },
+            {
+                `"characteristic":,
+                "time": 250.245,
+                "for": "System A"
+            },
+            {
+                `"characteristic": null,
+                "time": 126.476,
+                "for": "System A"
+            },
+            {
+                `"characteristic": null,
+                "time": 1.392,
+                "for": "System A"
+            }
+        ],
+        [
+            {
+                `"characteristic": ,
+                "time": 408.671,
+                "for": "System B"
+            },
+            {
+                `"characteristic": ,
+                "time": 67.248,
+                "for": "System B"
+            },
+            {
+                `"characteristic": ,
+                "time": 185.424,
+                "for": "System B"
+            },
+            {
+                `"characteristic": ,
+                "time": 163.593,
+                "for": "System B"
+            },
+            {
+                `"characteristic": null,
+                "time": 1080.405,
+                "for": "System B"
+            }
+        ]
+    ],
+    "tlx": [
+        {
+            "for": "System A",
+            "score": [
+                90,
+                20,
+                70,
+                80,
+                50,
+                60
+            ]
+        },
+        {
+            "for": "System B",
+            "score": [
+                70,
+                15,
+                50,
+                65,
+                65,
+                70
+            ]
+        }
+    ],
+    "likert": [
+        {
+            "for": "System A",
+            "score": [
+                2,
+                3,
+                2
+            ]
+        },
+        {
+            "for": "System B",
+            "score": [
+                2,
+                3,
+                3
+            ]
+        }
+    ],
+    "simple": [
+        {
+            "for": "System A",
+            "value": "random comment for system A"
+        },
+        {
+            "for": "System B",
+            "value": "random comment for system B"
+        }
+    ]
+}
