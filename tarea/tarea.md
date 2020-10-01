@@ -35,7 +35,7 @@ En esta tarea se realizará una prueba de usabilidad observando al usuario util
 4. Debe captar las reacciones faciales del usuario.
 5. Analice la interacción del usuario y encuentre 3 errores principales que haya que corregir en el
 sistema testeado.
-6. Suba a su repo Git forkeado del repo del profesor un informe (PDF) de a lo más 2 páginas (1 hoja por ambos lados) con:
+6. Suba a su repo Git forkeado del repo del profesor un informe (Markdown o PDF) de a lo más 2 páginas (1 hoja por ambos lados) con:
     - Integrantes del grupo y sistema testeado.
     - Definición de la comunidad usuaria.
     - Lista de 3 errores prioritarios de arreglar basados en la interacción observada.
