@@ -2,23 +2,30 @@
 
 En esta tarea se realizará una prueba de usabilidad observando al usuario utilizando uno de los siguientes sistemas. Los sistemas están definidos según el número de grupo.
 
-|Sistema               |Tarea general             |Aclaración                                      |
-|----------------------|--------------------------|------------------------------------------------|
-|Turbus                |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
-|Pullman               |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
-|Emebus                |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
-|Sky                   |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
-|Latam                 |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
-|SIGA                  |Generación de certificados|Si genera una solicitud anúlela                        |
-|SIGA                  |Generación de certificados|Debe anular una solicitud después de generarla  |        
-|Integramédica         |Agendar hora médica       |Debe anular la hora una vez terminada la prueba |        
-|Clínica Ciudad del Mar|Agendar hora médica       |Debe anular la hora una vez terminada la prueba |        
-|Registro Civil        |Obtener certificado       |Sin costo                                       |        
-|PCFactory             |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
-|Lider                 |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
-|Jumbo                 |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
-|Outlet del café       |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
-|Taller café           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| Número |Sistema               |Tarea general             |Aclaración                                      |
+|----------------------|----------------------|--------------------------|------------------------------------------------|
+| 1 |Turbus                |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
+| 2 |Pullman               |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
+| 3 |Emebus                |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
+| 4 |Sky                   |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
+| 5 |Latam                 |Compra de pasajes         |La tarea finaliza una vez redirigido a Transbank|
+| 6 |SIGA                  |Generación de certificados|Si genera una solicitud anúlela                        |
+| 7 |SIGA                  |Generación de certificados|Debe anular una solicitud después de generarla  |        
+| 8 |Integramédica         |Agendar hora médica       |Debe anular la hora una vez terminada la prueba |        
+| 9 |Clínica Ciudad del Mar|Agendar hora médica       |Debe anular la hora una vez terminada la prueba |        
+| 10 |Registro Civil        |Obtener certificado       |Sin costo                                       |        
+| 11 |PCFactory             |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 12 |Lider                 |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 13 |Jumbo                 |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 14 |Outlet del café       |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 15 |Taller café           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 16  | la casa de la cerveza           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 17 |Amazon           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 18 | Ripley           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 19 | zmart           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 20 | Beerbana           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 21 | Epic           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
+| 22 | Steam           |Compra de artículos       |La tarea finaliza una vez redirigido a Transbank|
 
 ### Responda a las siguientes preguntas
 
