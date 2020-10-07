@@ -5,8 +5,10 @@
 -- Pedro Donoso Aguilera.
 - Video:  [Prueba con Usuario: Página web de JUMBO](https://youtu.be/pJOuNWNKNu4 )
 - Defina la comunidad usuaria y sus 3 características inolvidables.
+
 **Comunidad Usuaria**: 
 Personas en su mayoría dueños o dueñas de casa de Chile que residen en sectores medios y urbanos. Realizan compras por internet buscando exclusividad y calidad, ya que JUMBO importa una gran cantidad de productos, todo ello con la facilidad de no tener que ir de forma presencial al supermercado, sino hacerlo desde la comodidad de su hogar. Además, son personas a las cuales no les molesta pagar un precio ligeramente superior con respecto a la competencia.
+
 **Características**: 
 -- Clase media-alta.
 -- Poco tiempo para realizar compras de forma presencial.
