@@ -1,3 +1,3 @@
 # Repo Git para los Proyectos de la asignatura Interfaces de Usuario INF322
 
-En este repo los alumnos encontrarán la estructura para desarrollar sus proyectos de la asignatura Diseño de Interfaces usuarias INF322. En la carpeta documentos encontrarán los posibles proyectos a implementar  y otros documentos, como la carpeta Proceso Lean con un capítulo de libro que les guiará durante el proceso de diseño.
+En este repo los alumnos encontraran la estructura para desarrollar sus proyectos de la asignatura Diseño de Interfaces usuarias INF322. En la carpeta documentos encontrarán los posibes proyectos a implementar  y otros documentos, como la carpeta Proceso Lean con un capítulo de libro que les guiará durante el proceso de diseño. 
