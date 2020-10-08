@@ -13,7 +13,7 @@ Este diseño tiene dos componentes principales: un diseño de baja fidelidad sob
 ## Entrega
 
 Los alumnos deben entregar:
-- Un informe con la descripción de las dos tareas que el usuario debe realizar en sus prototipos
+- Un informe en Markdown con la descripción de las dos tareas que el usuario debe realizar en sus prototipos
 - fotografías de los prototipos de bajo nivel realizados para la ejecución de dos tareas
 - un vídeo subido a Google Drive donde alguien testea el prototipo de bajo nivel
 - Un informe con los errores detectados de ese testeo (si no hay errores nada)
