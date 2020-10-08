@@ -13,7 +13,7 @@
     * **Características**: 
         * Clase media-alta.
         * Poco tiempo para realizar compras de forma presencial.
-        * Adultos jóvenes.
+        * Adultos jóvenes
 
 - Tarea Específica:
     - Tarea 1: Ingresar a la página de Jumbo.cl.
