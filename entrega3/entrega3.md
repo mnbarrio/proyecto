@@ -59,8 +59,6 @@ En este semestre de Interfaces los alumnos deberán desarrollar la interfaz de u
     2. Contacto con el otro usuario
     3. Mostrar ubicación de uno de los usuarios (con solicitud de permiso) 
 
-El desarrollo del proyecto se debe realizar a través de entregas bi-semanales, comenzando dentro de dos semanas. El desarrollo de la interfaz se realizará utilizando Web Components y Polymer de Google. Estas entregas se deben realizar a través de un fork del repositorio Git del profesor y todos los integrantes del grupo deben contribuir al desarrollo del mismo. En la última semana los alumnos deberán presentar su interfaz a los compañeros a través de una demo online. En concreto, la evaluación será la siguiente:
- - Entregas bi-semanales: 5 entregas 40%
- - Entrega final: 1 entrega 30%
- - Demo del proyecto 30%
-
+Tarea de la entrega 3:
+ - Mockup en AdobeXD de cada tarea
+ - Evaluación por parte de un alumno de un grupo distinto de la interfaz grabando un vídeo en AdobeXD donde se pueda ver la interacción entre los componentes de la interfaz. El vídeo se puede grabar por Zoom en combinación con AdobeXD.
