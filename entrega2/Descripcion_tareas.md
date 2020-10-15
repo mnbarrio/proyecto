@@ -12,6 +12,7 @@ La segunda tarea es la de **buscar** proyecto, para ello se considerará realiza
 
 # Imagenes prototipo bajo nivel
 - [PPT con  el prototipo](https://docs.google.com/presentation/d/1F6UgYHxUy4PXpRpUW9z0PDb_V-hkDKwgR6Q7CachCtA/edit?usp=sharing)
+- [Pizarra de trabajo en Miro](https://miro.com/app/board/o9J_kk-ApuA=/)
 
 # Video de testeo
 - [Video test de usuario]()
