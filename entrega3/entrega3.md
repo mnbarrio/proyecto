@@ -55,7 +55,7 @@ En este semestre de Interfaces los alumnos deberán desarrollar la interfaz de u
     2. Marcar en calendario asistencia a un evento de RRHH
     3. Solicitud de un servicio de RREE
 14. Tienda online/intercambio de objetos: últimamente algunos de nosotros hemos tenido que vender o intercambiar algunos objetos que teníamos en casa. En este proyecto se pide desarrollar una interfaz que facilite esta tarea.
-    1. Intercambio de producto
+    1. Encontrar/Venta/Intercambio de producto
     2. Contacto con el otro usuario
     3. Mostrar ubicación de uno de los usuarios (con solicitud de permiso) 
 
