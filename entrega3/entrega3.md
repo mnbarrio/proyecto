@@ -28,8 +28,8 @@ En este semestre de Interfaces los alumnos deberán desarrollar la interfaz de u
    3. Actualización de datos de usuario
 7. Web relaciones estudiantiles: en esta web los alumnos tienen la oportunidad de acceder a diferentes servicios proporcionados por Relaciones Estudiantiles. Los alumnos de Interfaces deberán rediseñar la interfaz de Relaciones Estudiantiles.
    1. Listado de servicios de RREE
-   2. Marcar en calendario asistencia a un evento de RRHH
-   3. Solicitud de un servicio de RREE
+   2. Marcar en calendario asistencia a un evento de RREE
+   3. Solicitud de un servicio de RREE/Creación de un evento de RREE
 8. Evento Feria Sw en línea, seminarios, paneles y exposiciones: lamentablemente la feria de software ha debido realizarse en modo virtual en las últimas ediciones. Los organizadores requieren de tu ayuda para poder comunicar de la mejor forma los proyectos de cada equipo.
    1. Creación de un nuevo proyecto de feria
    2. Visita virtual a proyecto de feria
