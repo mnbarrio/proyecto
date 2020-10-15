@@ -9,3 +9,12 @@ La segunda tarea es la de **buscar** proyecto, para ello se considerará realiza
 2. Escriba un nombre o seleccione un filtro de interés.
 3. Presione el botón "buscar"
 4. Se encuentre en la página solicitada
+
+# Imagenes prototipo bajo nivel
+- [PPT con  el prototipo](https://docs.google.com/presentation/d/1F6UgYHxUy4PXpRpUW9z0PDb_V-hkDKwgR6Q7CachCtA/edit?usp=sharing)
+
+# Video de testeo
+- [Video test de usuario]()
+
+# Prototipo en Adobe XD
+- [Prototipo](https://xd.adobe.com/view/affa60de-c94a-4ea0-8bcb-26d1326609a0-faa9/?fullscreen&hints=off)
