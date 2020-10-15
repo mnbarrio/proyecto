@@ -5,7 +5,7 @@ En este semestre de Interfaces los alumnos deberán desarrollar la interfaz de u
 1. Pomodoro - productividad: En este proyecto los alumnos deberán diseñar una aplicación para gestionar el tiempo que un alumno utiliza en una lista de tareas mediante la técnica Pomodoro. Esta técnica se basa en dividir una tarea que requiere bastante tiempo en subtareas que se puedan realizar en 25 minutos, con 5 minutos de descanso. Durante esos 25 minutos los alumnos deben trabajar sin distracciones en esa sub-tarea, a lo que se llama Pomodoro. Cada 4 Pomodoros es posible tomarse un descanso de un Pomodoro (25 minutos). Tareas a realizar: 
    1. crear tarea nueva que dure tres pomodoros
    2. inicar y completar tarea
-   3. iniciar y completar una jornada de trabajo
+   3. dividir una jornada de trabajo en sesiones de trabajo
 2. Spa profesores: en el Departamento de Informática hay una nueva aplicación para gestionar la selección de ayudantes para las distintas asignaturas. Sin embargo la interfaz deja bastante espacio para mejorar, tanto desde el punto de vista del profesor como del postulante a las ayudantías. En este proyecto los alumnos deberán diseñar la vista del profesor para seleccionar ayudantes (el usuario principal será el profesor de una asignatura). Tareas a realizar:
    1. Revisar postulantes de dos asignaturas
    2. Seleccionar postulantes de una asignatura
