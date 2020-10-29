@@ -6,7 +6,7 @@ Evento Feria Sw en línea, seminarios, paneles y exposiciones: lamentablemente l
 3. Votación por proyecto de la feria  
 
 # Mockup en Adobe XD
-- [Mockup]()
+- [Mockup](https://xd.adobe.com/view/970b443f-377f-4052-80d9-77e8d333beac-c258/?fullscreen&hints=off)
 
 # Video de testeo
 - [Video test de usuario]()
