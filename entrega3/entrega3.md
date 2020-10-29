@@ -5,7 +5,7 @@ En este semestre de Interfaces los alumnos deberán desarrollar la interfaz de u
 1. Pomodoro - productividad: En este proyecto los alumnos deberán diseñar una aplicación para gestionar el tiempo que un alumno utiliza en una lista de tareas mediante la técnica Pomodoro. Esta técnica se basa en dividir una tarea que requiere bastante tiempo en subtareas que se puedan realizar en 25 minutos, con 5 minutos de descanso. Durante esos 25 minutos los alumnos deben trabajar sin distracciones en esa sub-tarea, a lo que se llama Pomodoro. Cada 4 Pomodoros es posible tomarse un descanso de un Pomodoro (25 minutos). Tareas a realizar: 
    1. crear tarea nueva que dure tres pomodoros
    2. inicar y completar tarea
-   3. iniciar y completar una jornada de trabajo
+   3. dividir una jornada de trabajo en sesiones de trabajo
 2. Spa profesores: en el Departamento de Informática hay una nueva aplicación para gestionar la selección de ayudantes para las distintas asignaturas. Sin embargo la interfaz deja bastante espacio para mejorar, tanto desde el punto de vista del profesor como del postulante a las ayudantías. En este proyecto los alumnos deberán diseñar la vista del profesor para seleccionar ayudantes (el usuario principal será el profesor de una asignatura). Tareas a realizar:
    1. Revisar postulantes de dos asignaturas
    2. Seleccionar postulantes de una asignatura
@@ -28,8 +28,8 @@ En este semestre de Interfaces los alumnos deberán desarrollar la interfaz de u
    3. Actualización de datos de usuario
 7. Web relaciones estudiantiles: en esta web los alumnos tienen la oportunidad de acceder a diferentes servicios proporcionados por Relaciones Estudiantiles. Los alumnos de Interfaces deberán rediseñar la interfaz de Relaciones Estudiantiles.
    1. Listado de servicios de RREE
-   2. Marcar en calendario asistencia a un evento de RRHH
-   3. Solicitud de un servicio de RREE
+   2. Marcar en calendario asistencia a un evento de RREE
+   3. Solicitud de un servicio de RREE/Creación de un evento de RREE
 8. Evento Feria Sw en línea, seminarios, paneles y exposiciones: lamentablemente la feria de software ha debido realizarse en modo virtual en las últimas ediciones. Los organizadores requieren de tu ayuda para poder comunicar de la mejor forma los proyectos de cada equipo.
    1. Creación de un nuevo proyecto de feria
    2. Visita virtual a proyecto de feria
@@ -55,7 +55,7 @@ En este semestre de Interfaces los alumnos deberán desarrollar la interfaz de u
     2. Marcar en calendario asistencia a un evento de RRHH
     3. Solicitud de un servicio de RREE
 14. Tienda online/intercambio de objetos: últimamente algunos de nosotros hemos tenido que vender o intercambiar algunos objetos que teníamos en casa. En este proyecto se pide desarrollar una interfaz que facilite esta tarea.
-    1. Intercambio de producto
+    1. Encontrar/Venta/Intercambio de producto
     2. Contacto con el otro usuario
     3. Mostrar ubicación de uno de los usuarios (con solicitud de permiso) 
 
