@@ -1,5 +1,8 @@
 import { html, css, LitElement, property } from 'lit-element';
 
+// import '@kor-ui/kor/components/button'
+// import '@kor-ui/kor/kor-styles.css'
+
 import '@material/mwc-button'
 import '@material/mwc-list/mwc-list.js';
 import '@material/mwc-list/mwc-list-item.js';
@@ -13,7 +16,7 @@ export class MyElement extends LitElement {
     }
   `;
 
-  @property({ type: String }) title = 'Hey there';
+  // @property({ type: String }) title = 'Hey there';
 
   @property({ type: Number }) counter = 5;
 

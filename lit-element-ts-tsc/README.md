@@ -8,7 +8,7 @@ Lo primero que necesitamos es instalar NodeJS, así que utilizando vuestro gesto
 
 Y después, empezaremos este tutorial clonando este repositorio:
 
-`git clone https://github.com/modernweb-dev/example-projects`
+`git clone https://gitlab.labcomp.cl/cbuil/proyecto-inf322`
 
 y accediendo al directorio `lit-element-ts-tsc`
 
@@ -17,11 +17,11 @@ y accediendo al directorio `lit-element-ts-tsc`
 He de resaltar que el proyecto original lo podéis encontrar en `https://github.com/modernweb-dev/example-projects` con varios ejemplos más. 
 
 
+Mediante el comando `npm i` instalaréis todas las dependencias necesarias para ejecutar el proyecto demo.
+
 El siguiente comando instala un servidor de desarrollo en nuestra carpeta. 
 
 `npm i --save-dev @web/dev-server`
-
-Mediante el comando `npm i` instalaréis todas las dependencias necesarias para ejecutar el proyecto demo.
 
 En este tutorial usaré `TypeScript` porque a estas alturas de la carrera todos conocemos las ventajas de los lenguajes tipeados. Para compilar vuestro proyecto `TypeScript` simplemente tenéis que utilizar el comando `tsc` en el directorio `lit-element-ts-tsc`
 
