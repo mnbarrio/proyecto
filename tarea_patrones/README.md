@@ -40,6 +40,7 @@ Se puede apreciar una sección con paneles cerrables en donde se hayan filtros d
 
 ### Patrones de navegación 
 1. Claros puntos de entrada
+.
 ![](https://gitlab.labcomp.cl/mnbarrio/proyecto-inf322/-/raw/master/tarea_patrones/imagenes_tarea/ptos_entrada.png)
 
 2. Navegación general 
