@@ -31,17 +31,18 @@ La sección en donde se edita el photobook es notoriamente mayor.
 ![](https://gitlab.labcomp.cl/mnbarrio/proyecto-inf322/-/raw/master/tarea_patrones/imagenes_tarea/esc_principal.png)
 
 3. Secciones tituladas 
-Hay una separación entre artículos de un mismo tipo con títulos notorios 
-![](https://gitlab.labcomp.cl/mnbarrio/proyecto-inf322/-/raw/master/tarea_patrones/imagenes_tarea/secc_tituladas.png)
+Hay una separación entre artículos de un mismo tipo con títulos notorios.
+
+    ![](https://gitlab.labcomp.cl/mnbarrio/proyecto-inf322/-/raw/master/tarea_patrones/imagenes_tarea/secc_tituladas.png)
 
 4. Paneles cerrables
 Se puede apreciar una sección con paneles cerrables en donde se hayan filtros de búsqueda
 ![](https://gitlab.labcomp.cl/mnbarrio/proyecto-inf322/-/raw/master/tarea_patrones/imagenes_tarea/pan_cerrables.png)
 
 ### Patrones de navegación 
-1. Claros puntos de entrada
-.
-![](https://gitlab.labcomp.cl/mnbarrio/proyecto-inf322/-/raw/master/tarea_patrones/imagenes_tarea/ptos_entrada.png)
+1. Claros puntos de entrada.
+
+    ![](https://gitlab.labcomp.cl/mnbarrio/proyecto-inf322/-/raw/master/tarea_patrones/imagenes_tarea/ptos_entrada.png)
 
 2. Navegación general 
 Se puede apreciar una sección con paneles cerrables en donde se hayan filtros de búsqueda
