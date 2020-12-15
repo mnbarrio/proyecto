@@ -1,3 +1,4 @@
 .DS_Store
 
-lit-element-ts-tsc/node_modules/
+/*/node_modules/
+/*/tsc-out

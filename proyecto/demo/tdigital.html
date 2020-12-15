@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+  <link rel="stylesheet" href="../node_modules/smart-webcomponents/source/styles/smart.default.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../src/index.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,900&display=swap" rel="stylesheet">
+<meta http-equiv="prueba" url="prueba.html"/>
+<style>
+  body {
+    background: url(../images/transformacion-digital.jpg);
+    background-size: cover;
+  }
+  body img{
+    width: 100%;
+    height: auto;
+  }
+  
+  </style>
+</head>
+<html>
+  <body class="body">  
+    <script type="module" src="../tsc-out/src/MyVote.js"></script>
+    <script type="module" src="../tsc-out/src/MyNavbar.js"></script>
+    <script type="module" src="../tsc-out/src/MyButton.js"></script>
+    <script type="module" src="../tsc-out/src/MyCategory.js"></script>
+    
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+    <script>
+      window.addEventListener('scroll',function() {
+        var votes = document.getElementsByTagName('my-vote')[0];
+        console.log(votes);
+        var altura = window.innerHeight;
+        //var distancia = votes.getBoundingClientRect().top;
+        console.log(distancia);
+        console.log(altura); //759
+      })
+    </script>
+    <!--<smart-carousel id="carousel" class="slide" ></smart-carousel>-->
+    <!--<my-element></my-element>-->
+    <my-category up="Transformación" down="DIGITAL" estilo="rojo"></my-category>
+    <my-navbar></my-navbar>
+    <my-button></my-button>
+    
+    
+    
+    
+  </body>
+</html>
