@@ -1,5 +1,4 @@
 import { html, css, LitElement, property } from 'lit-element';
-import 'bootstrap';
 
 export class MyNavBar extends LitElement {
   static styles = css`
@@ -42,7 +41,7 @@ export class MyNavBar extends LitElement {
       <div class="navbar-collapse  w-100 order-1 order-md-0 ">
           <ul class="navbar-nav mr-auto">
               <li class="nav-item">
-                <a class="navbar-brand" href="#home">
+                <a class="navbar-brand" href="principal.html">
                   <img class="logotipo" src="../images/logo.png" alt="Haz clic aquí para volver a la página de inicio">
                 </a>
               </li>

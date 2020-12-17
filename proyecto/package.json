@@ -7,6 +7,7 @@
   "author": "modern web",
   "main": "index.js",
   "module": "index.js",
+  "homepage": "demo/principal.html",
   "scripts": {
     "build": "tsc",
     "build:watch": "tsc --watch",
@@ -14,7 +15,7 @@
     "start:watch": "web-dev-server --open demo/ --node-resolve --watch",
     "test": "tsc && web-test-runner tsc-out/test/*.test.js --node-resolve",
     "test:watch": "web-test-runner test/*.test.js --node-resolve --watch",
-    "dev": "concurrently \"web-dev-server --open demo/ --node-resolve\" \"tsc -w\""
+    "dev": "concurrently \"web-dev-server --open demo/principal.html --node-resolve\" \"tsc -w\""
   },
   "dependencies": {
     "@polymer/polymer": "^3.4.1",
