@@ -98,4 +98,4 @@ class NavBarTest extends LitElement {
     `;
   }
 }
-window.customElements.define('my-navbar',NavBarTest);
+window.customElements.define('my-navbarp',NavBarTest);
