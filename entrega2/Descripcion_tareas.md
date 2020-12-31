@@ -18,4 +18,4 @@ La segunda tarea es la de **buscar** proyecto, para ello se considerará realiza
 - [Video test de usuario]()
 
 # Prototipo en Adobe XD
-- [Prototipo](https://xd.adobe.com/view/affa60de-c94a-4ea0-8bcb-26d1326609a0-faa9/?fullscreen&hints=off)
+- [Prototipo](https://xd.adobe.com/view/970b443f-377f-4052-80d9-77e8d333beac-c258/?fullscreen&hints=off)
