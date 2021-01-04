@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com"><link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  </head>
+  <style>
+    body {
+      background-image: url(../images/fondoLogin.png);
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+    }
+
+  h2.blue-text {
+    color:rgb(35, 45, 110);
+  }
+
+/* divisiones */
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.right {
+  right: 0;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* login  */ 
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 2px solid rgb(35, 45, 110);
+  text-align: center;
+}
+
+
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+
+
+/* boton lindo */
+.button2 {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  width: 100%;z
+}
+
+.button3 {
+  background-color: white; 
+  color:red; 
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.button3:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+.button4 {
+  background-color: white;
+  color: rgb(35, 45, 110);
+  border: 2px solid #e7e7e7;
+  border-radius: 30px;
+  font-weight: bold;
+}
+
+.button4:hover {background-color: #e7e7e7;}
+
+  </style>
+  <body>
+    
+    <div class="split right">
+      <div class="centered">
+
+        <h2 class="blue-text" color="rgb(35, 45, 110)"> Ingresar </h2>
+
+<form action="/action_page.php" method="post">
+
+
+  <div class="container">
+    <input type="text" placeholder="Usuario" name="uname" required>
+
+    <input type="password" placeholder="Contraseña" name="psw" required>
+        
+    <button class="button2 button4">Ingresar</button>
+  </div>
+
+  <div class="container">
+    <button class="button2 button3">CANCELAR</button>
+  </div>
+
+
+
+</form>
+
+
+      </div>
+    </div>
+
+    <script type="module" src="../tsc-out/src/MyElement.js"></script>
+    <script type="module" src="../tsc-out/src/MyYes.js"></script>
+  </body>
+</html>
