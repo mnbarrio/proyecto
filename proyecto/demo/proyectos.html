@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="../node_modules/smart-webcomponents/source/styles/smart.default.css" type="text/css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../src/index.css" type="text/css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;1,900&display=swap" rel="stylesheet">
+  <meta http-equiv="prueba" url="prueba.html"/>
+<!-- css -->
+<style>
+  body {
+    /*background-image: url(../images/inteligencia-artificial.png);*/
+    background-size: auto;
+    color: white;
+  }
+  .sinpadding [class*="col-"] {
+    padding: 0;
+}
+  .filtro {
+        background: rgba(2,5,31,0.7);
+        opacity: 0.7;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    .subfiltro {
+        background: #eb0000;
+        opacity: 0.7;
+        height: 40vw;
+        width: 60vw;
+        position: relative;
+    }
+    .material-icons.md-search { /*iconos navbar menu a la tamaño y color*/
+        color: white; 
+        font-size: 4vw;
+    }
+    .icon {
+      margin-right: 3rem;
+    }
+    .redes{
+        margin-left: 3vw;
+    }
+  </style>
+</head>
+  <body>  
+    <script type="module" src="../tsc-out/src/MyVote.js"></script>
+    <script type="module" src="../tsc-out/src/MyNavbar.js"></script>
+    <script type="module" src="../tsc-out/src/MyButton.js"></script>
+    <script type="module" src="../tsc-out/src/MyCategory.js"></script>
+    <script type="module" src="../tsc-out/src/MyProyecto.js"></script>
+     
+    <!--Bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!--Bootstrap-->
+
+     <!--roboto slab-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+     <!--roboto-->
+     <link rel="preconnect" href="https://fonts.gstatic.com">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!--robot light-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+    <!--<script>
+      window.addEventListener('scroll',function() {
+        var votes = document.getElementsByTagName('my-vote')[0];
+        console.log(votes);
+        var altura = window.innerHeight;
+        //var distancia = votes.getBoundingClientRect().top;
+        console.log(distancia);
+        console.log(altura); //759
+      })
+    </script>
+-->
+    <!--<smart-carousel id="carousel" class="slide" ></smart-carousel>-->
+    <!--<my-element></my-element>-->
+    <my-proyecto></my-proyecto>
+
+
+
+        
+  </body>
+</html>

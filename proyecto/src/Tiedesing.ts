@@ -4,7 +4,8 @@ class TieDesing extends LitElement {
     static get styles(){
       return css `
       .tecline.blue{
-        position: relative;
+        position: absolute;
+        bottom: 0.4vw;
         background-color: #0099FF;
         width: 120%;
         height: 0.2vw;
@@ -12,7 +13,8 @@ class TieDesing extends LitElement {
       }
 
       .tecline.yellow{
-        position: relative;
+        position: absolute;
+        bottom: 0;
         background-color: #FCC53F;
         width: 120%;
         height: 0.2vw;
@@ -20,10 +22,11 @@ class TieDesing extends LitElement {
       }
 
       .tecline.red{
-        position: relative;
+        position: absolute;
+        bottom: 0.2vw;
         background-color: #D42029;
         width: 120%;
-        height: 0.25vw;
+        height: 0.2vw;
         margin-left: -16%;
       }
 
@@ -34,7 +37,7 @@ class TieDesing extends LitElement {
       height: 45%;
       top:55%;
       bottom:0;
-      left:95%;
+      right:4vw;
     }
 
     .vertical-line.red{
@@ -64,7 +67,7 @@ class TieDesing extends LitElement {
       height: 65%;
       top:20%;
       bottom:0;
-      left: 109.5%;
+      left: 112vw;
       transform: rotate(270deg);
       font-size:1.5vw;
     }
@@ -76,7 +79,7 @@ class TieDesing extends LitElement {
       height: 65%;
       top:30%;
       bottom:0;
-      left: 105.5%;
+      left: 107vw;
       transform: rotate(270deg);
       font-size:1.5vw;
     }
@@ -88,7 +91,7 @@ class TieDesing extends LitElement {
       height: 65%;
       top:40%;
       bottom:0;
-      left: 101.5%;
+      left: 103vw;
       transform: rotate(270deg);
       font-size:1.5vw;
     }

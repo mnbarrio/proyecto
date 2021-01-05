@@ -86,7 +86,7 @@ class NavBarTest extends LitElement {
 
           <!--derecha-->
           <ul class="navbar-nav d-flex flex-row-reverse">
-            <li class="nav-item navbarbutton"><p class="nav-link cover_color blue" href="#xd">¡Envíanos tu proyecto!</p></li>
+            <li class="nav-item navbarbutton"><a class="nav-link cover_color blue"  href="login.html">¡Envíanos tu proyecto!</a></li>
             <li class="nav-item navbarbutton"><p class="nav-link cover_color red" href="#xd">+INFO</p></li>
             <li class="nav-item navbarbutton"><p class="nav-link cover_color red" href="#xd">Contacto</p></li>
             <li class="nav-item navbarbutton"><p class="nav-link cover_color red" href="#xd">Historia</p></li>
@@ -98,4 +98,4 @@ class NavBarTest extends LitElement {
     `;
   }
 }
-window.customElements.define('my-navbarp',NavBarTest);
+window.customElements.define('my-navbartest',NavBarTest);

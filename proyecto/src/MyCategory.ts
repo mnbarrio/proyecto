@@ -61,7 +61,7 @@ export class MyCategory extends LitElement {
         <div class="up"><b>${this.up}</b></div>
         <div class="down"><b>${this.down}</b></div>
       </div>
-        <div class="filtro "></div>
+      <div class="filtro "></div>
 
       <div style="margin-top: 10%;">
         <my-vote color="${this.estilo}" title="FlyBBit: HappyCrops" content="HappyCrops es un servicio de monitoreo periódico para los cultivos. Durante los monitoreos se capturan imágenes de los cultivos las cuales son posteriormente analizadas utilizando machine learning para detectar posibles enfermedades y en el caso de ser así generar un diagnóstico del estado actual y el tratamiento a seguir." ></my-vote>

@@ -58,16 +58,17 @@
 
       .flotante {
         display:scroll;
-        position:fixed;
-        bottom:250px;
-        right:100px;
+        position:absolute;
+        bottom:13vw;
+        right:10vw;
       }
 
       .titledesing{
-        width: 100%;
-        height: 100%;
+        width: 100vw;
+        height: 100vw;
         padding-top: 10vw;
         padding-left: 10vw;
+        
       }
 
       .titlemayor{
@@ -86,20 +87,24 @@
 
       .btndesing{
         background-color: #FCC53F;
-        font-family: sans-serif;
-        font-size: 1.5vw;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 400;
+        font-size: 2vw;
         width:25vw;
-        height:4vw;
+        height:5vw;
+        border-radius: 10px;
       }
 
       .btndesing:hover{
         background-color: #132e49;
         color: #FCC53F;
-        font-family: sans-serif;
+        font-family: 'Roboto', sans-serif; 
+        font-weight: 400;
+        font-size: 2vw;
       }
     </style>
       <div class="fondo">
-        <my-navbarp></my-navbarp>
+        <my-navbartest></my-navbartest>
 
         <!--Título-->
         <div class ="titledesing">
@@ -107,7 +112,7 @@
           <h2 class="titlemenor"> ¡Estamos desarrollando aplicaciones geniales!</h2>
           <!--Botón-->
           <div class="col text-center flotante">
-              <a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><button class="btn btndesing">Ver proyectos</button></a>
+              <a  href="proyectos.html"><button class="btn btndesing">Ver Proyectos</button></a>
           </div>
           <!--Botón-->
           <my-tiedesing></my-tiedesing>
