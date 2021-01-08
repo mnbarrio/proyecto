@@ -7,10 +7,47 @@ export class MyProyecto extends LitElement {
     @property({ type: String }) color_fondo = "#132e49f2";
     @property({ type: String }) categoria = "td";
     @property({ type: String }) titulo_categoria = "Inteligencia Artificial";
+    @property({ type: String }) titulo_IA = "Inteligencia Artificial";
+    @property({ type: String }) titulo_TD = "Trasformación Digital";
     @property({ type: String }) video = "https://www.youtube.com/embed/HFgmGcOLo-U";
     @property({ type: String }) fondo = "url(../images/inteligencia-artificial.png)";
+    @property({ type: String }) instagram = "https://www.instagram.com/happy.crops/";
+    @property({ type: String }) facebook = "https://www.facebook.com/HappyCropsChile/";
+    @property({ type: String }) web = "http://happycrops.feriadesoftware.cl";
+    @property({ type: Number }) counteria = 300;
+    @property({ type: Number }) countertd = 24;
+    @property({ type: Boolean }) btd = false;
+    @property({ type: Boolean }) bia = false;
 
-    
+  __increment() {
+      if (this.categoria == "td")
+      {
+        if (this.bia == false)
+        {
+          this.counteria += 1;
+          this.bia = true;
+        }
+        else
+        {
+          this.counteria -= 1;
+          this.bia = false;
+        }
+      }
+      else
+      {
+        if (this.btd == false)
+        {
+          this.countertd += 1;
+          this.btd = true;
+        }
+        else
+        {
+          this.countertd -= 1;
+          this.btd = false;
+        }
+      }
+    }
+
 
     static styles = css`
         :host {
@@ -41,7 +78,7 @@ export class MyProyecto extends LitElement {
             cursor: pointer;
         }
         .flechas {
-            color: black; 
+            color: black;
             font-size: 4vw;
             background-color: white;
 
@@ -52,13 +89,13 @@ export class MyProyecto extends LitElement {
             background-color: black;
         }
         .like {
-            color: white; 
+            color: white;
             font-size: 2vw;
             background-color: red;
             padding: 0.3vw;
         }
         .like:hover {
-            color: red; 
+            color: red;
             font-size: 2vw;
             background-color: white;
             padding: 0.3vw;
@@ -76,8 +113,9 @@ export class MyProyecto extends LitElement {
             color:white;
             width: 18vw;
         }
-            
+
     `;
+
     @property({ type: Boolean }) estado = false;
 
     _handleClick(e: any) {
@@ -90,6 +128,9 @@ export class MyProyecto extends LitElement {
             this.titulo_categoria = "Inteligencia Artificial";
             this.video = 'https://www.youtube.com/embed/HFgmGcOLo-U';
             this.fondo = "url(../images/inteligencia-artificial.png)";
+            this.instagram = "https://www.instagram.com/happy.crops/";
+            this.facebook = "https://www.facebook.com/HappyCropsChile/";
+            this.web = "http://happycrops.feriadesoftware.cl";
             this.categoria = "td";
         } else if(this.categoria == "td") {
             this.color = "#9B2A51a6"; //rojo
@@ -100,6 +141,9 @@ export class MyProyecto extends LitElement {
             this.titulo_categoria = "Transformación Digital";
             this.video = 'https://www.youtube.com/embed/zTPkE2FNuQo';
             this.fondo = "url(../images/transformacion-digital.jpg)";
+            this.instagram = "https://www.instagram.com/mip_cl/";
+            this.facebook = "https://www.facebook.com/meetinginprogresscl/";
+            this.web = "http://mip.feriadesoftware.cl";
             this.categoria = "ia";
         }
         console.log(`Click: ${this.color}`);
@@ -107,7 +151,7 @@ export class MyProyecto extends LitElement {
 
   render() {
     return html`
-    
+
 
     <!--Header-->
      <link rel="stylesheet" href="../node_modules/smart-webcomponents/source/styles/smart.default.css" type="text/css" />
@@ -131,8 +175,8 @@ export class MyProyecto extends LitElement {
      <!--roboto-->
      <link rel="preconnect" href="https://fonts.gstatic.com">
      <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        
-    
+
+
     <div class="filtro" style=" background: ${this.fondo}; background-size: cover;"></div>
     <!--<div  class="filtro"  style=" background: ${this.color_fondo};"></div> -->
 
@@ -142,27 +186,27 @@ export class MyProyecto extends LitElement {
             <div class="col-lg-1">
             </div>
             <div class="col" style=" padding-left: 0;">
-                <button class="btn btn_categoria" style="background:${this.color};">
-                <div class="row">
-                    <span class="material-icons md-search" style="margin: 0.5vw;">keyboard_arrow_down</span>
-                    <div style="margin: 0.5vw;">${this.titulo_categoria}</div>
-                </div>
-            </button>
+                <Select class="btn btn_categoria" style="background:${this.color};" @change="${this._handleClick}">
+                   <option value="1">${this.titulo_IA}</option>
+                   <option value="2" >${this.titulo_TD} </option>
+                </select>
             </div>
         </div>
-        
+
         <div class="row" >
             <div class="col-lg-1" style="margin-top: auto; margin-bottom: auto;">
-            
+
                 <span class="material-icons md-search flechas" @click="${this._handleClick}">navigate_before</span>
             </div>
             <div class="col-lg-10" style="background:${this.color};  padding: 0px 4rem;">
-          
+
                 <div class="row" style="margin: 1rem 0rem;">
-                    <div class="col-lg-1 offset-lg-11" >
-                        <span class="material-icons md-search like">favorite</span>
+                    <div class="col-lg-2 offset-lg-11">
+                        <span class="material-icons md-search like"  @click=${this.__increment}>favorite</span>
+                        <span style="font-family: 'Roboto'; font-size:2.5vw;">${this.categoria=="td"?this.counteria:this.countertd}</span>
                     </div>
                 </div>
+
                 <div class="row"> <!-- primera seccion -->
                     <ul class="col ml-auto"> <!-- izqiierda-->
                         <div style="font-family: 'Roboto', sans-serif; font-size: 1.5vw; font-weight: 300;">
@@ -184,9 +228,9 @@ export class MyProyecto extends LitElement {
                 <div class="row align-items-start">
                     <div class="col-8">
                         <div class="redes" style="padding-bottom:2rem; display: flex; justify-content: left;">
-                            <a href="" class="icon" title="Instagram" onmouseover="mostrar('Agregar instagram del proyecto')" onmouseout="quitar()" ><i class="fab fa-instagram" style="font-size: 3rem; width: 4rem; height: 4rem; padding: 0.55rem; padding-left: 0.65rem; color: white;background: black; border-radius: 50%; " ></i></a>
-                            <a href="" class="icon" title="Facebook" onmouseover="mostrar('Agregar facebook del proyecto')" onmouseout="quitar()" ><i class="fab fa-facebook" style="padding-top:1px; padding-left:1px;font-size:4rem; width: 4.1rem; height: 4.1rem; color: black; background: white; border-radius: 50%;  "></i></a>
-                            <a href="" class="icon" title="Página web" onmouseover="mostrar('Agregar pagina web del proyecto')" onmouseout="quitar()" ><i class="far fa-at" style=" width: 4rem; height: 4rem;padding: 0.8rem; color: white;background: black; border-radius: 50%; font-size: 2.5rem;"></i></a>
+                            <a href="${this.instagram}" target="_blank" class="icon" title="Instagram" onmouseover="mostrar('Agregar instagram del proyecto')" onmouseout="quitar()"><i class="fab fa-instagram" style="font-size: 3rem; width: 4rem; height: 4rem; padding: 0.55rem; padding-left: 0.65rem; color: white;background: black; border-radius: 50%; " ></i></a>
+                            <a href="${this.facebook}" target="_blank" class="icon" title="Facebook" onmouseover="mostrar('Agregar facebook del proyecto')" onmouseout="quitar()" > <i class="fab fa-facebook" style="padding-top:1px; padding-left:1px;font-size:4rem; width: 4.1rem; height: 4.1rem; color: black; background: white; border-radius: 50%;  "></i></a>
+                            <a href="${this.web}" target="_blank" class="icon" title="Página web" onmouseover="mostrar('Agregar pagina web del proyecto')" onmouseout="quitar()" ><i class="far fa-at" style=" width: 4rem; height: 4rem;padding: 0.8rem; color: white;background: black; border-radius: 50%; font-size: 2.5rem;"></i></a>
                         </div>
                     </div>
                 </div>

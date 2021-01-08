@@ -17,7 +17,7 @@ export class MyNavBar extends LitElement {
         height: 25%;
         }
     .material-icons.md-search { /*iconos navbar menu a la tamaño y color*/
-        color: white; 
+        color: white;
         font-size: 200%;
     }
     .dropdown-left-manual { /*dropdown menu a la izquierda*/
@@ -51,11 +51,11 @@ export class MyNavBar extends LitElement {
             <li class="nav-item"><span class="material-icons md-search nav-link" @click=${this._back}>keyboard_backspace</span></li>
             <li class="dropdown nav-item dropleft" >
               <span class="material-icons md-search dropdown-toggle-split nav-link" data-toggle="dropdown" type="button" >list</span>
-              <div class="dropdown-menu dropdown-left-manual">
-                <a class="dropdown-item" href="#"> Sobre Nosotros</a>
-                <a class="dropdown-item" href="#">Proyectos</a>
-                <a class="dropdown-item" href="#">Contacto</a>
-              </div>
+              <select class="dropdown-menu dropdown-left-manual">
+                <option value="1">Sobre Nosotros</option>
+                <option value="2">Proyectos</option>
+                <option value="2">contacto</option>
+              </select>
             </li>
         </ul>
 
