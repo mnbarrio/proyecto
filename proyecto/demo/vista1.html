@@ -74,10 +74,10 @@
         font-size: 1rem;
     }
     .card {
-        margin-right:1vw;
         background: rgb(170, 169, 169); 
         width: 10rem;
         height: 16rem;
+        margin: 2vw;
     }
     .flotante {
         display:scroll;
@@ -113,48 +113,33 @@
     <script src="https://use.fontawesome.com/e471b7b639.js"></script>
     <!--fontawesome-->
     <div class="container">
-    <form>
-        <div class="form-group">
-            <div class="row align-items-start">
-                <div class="col-4">
-                    <label class="col-10 col-form-label" for="equipoNombre">Equipo</label>
+        <form>
+            <div class="form-group">
+                <div class="row align-items-start">
+                    <div class="col-4">
+                        <label class="col-10 col-form-label" for="equipoNombre">Equipo</label>
+                    </div>
+                    <div class="col-8">
+                        <input title="Ingresar nombre del equipo" type="text" class="col-sm-10 form-control-plaintext" placeholder="Nombre equipo">
+                        <!-- <small id="equipoNombreAyuda" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+                    </div>
                 </div>
-                <div class="col-8">
-                    <input title="Ingresar nombre del equipo" type="text" class="col-sm-10 form-control-plaintext" placeholder="Nombre equipo">
-                    <!-- <small id="equipoNombreAyuda" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
-                </div>
-            </div>
-            <div class="row align-items-start">
-                <div class="col-4">
-                    <label class="col-10 col-form-label" for="equipoNombre">Integrantes</label>
-                </div>
-                <div class="col-8">
-                    <div class="integrantes">
-                        <div class="card">
-                            <div class="card-body ">
-                                <i class="fa fa-users"></i>
-                                <h5 class="card-title">Nombre integrante</h5>
-                                <p class="card-text">201373001-0</p>
-                            </div>
-                        </div>
-                        <a href="gooogle.com" >
-                            <div class="card" title="Agregar nuevo integrante">
-                                <div class="agregar-card">
-                                    <i class="fa fa-plus"></i>
-                                </div>
-                            </div>
-
-                        </a>
+                <div class="row align-items-start">
+                    <div class="col-4">
+                        <label class="col-10 col-form-label" for="equipoNombre">Integrantes</label>
+                    </div>
+                    <div class="col-8">
+                        <my-integrantes></my-integrantes>
                     </div>
                 </div>
             </div>
-        </div>
-    </form>
-</div>
-<div class="flotante">
-    <button type="submit" class="btn  btn-primary">Guardar</button>
-    <button type="submit" class="btn  btn-secundary">Cancelar</button>
-</div>
-    
-  </body>
+        </form>
+    </div>
+    <div class="flotante">
+        <button type="submit" class="btn  btn-primary">Guardar</button>
+        <button type="submit" class="btn  btn-secundary">Cancelar</button>
+    </div>
+    <script type="module" src="../tsc-out/src/MyIntegrantes.js"> </script>
+    <script type="module" src="../tsc-out/src/MyCardProvider.js"> </script>
+</body>
 </html>

@@ -146,12 +146,7 @@
             </div>
             <div class="col-6">
               <div class="categorias" style="padding-bottom:2rem;">
-                <button type="button" class="btn categoria" data-bs-toggle="tooltip"  title="categorias" disabled >
-                  Categoria 1
-                </button>
-                <button type="button" class="btn btn-secondary plus" data-bs-toggle="tooltip"  title="agregar categoria" onmouseover="mostrar('Agregar categoría')" onmouseout="quitar()" >
-                  <i class="fa fa-plus"></i>
-                </button>
+                <my-categoriatag></my-categoriatag>
             </div>
           </div>
         </div>
@@ -165,5 +160,7 @@
   <div class="alert alert-primary" role="alert" id="ayuda" hidden>
     Mensaje
   </div>
+  
+  <script type="module" src="../tsc-out/src/MyCategoriasTag.js"> </script>
   </body>
 </html>
