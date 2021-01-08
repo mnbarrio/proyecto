@@ -1,7 +1,7 @@
 
-
-                import { html, css, LitElement, property } from 'lit-element';
+import { html, css, LitElement, property } from 'lit-element';
 import {MyCard} from '../src/MyCard';
+import {repeat} from 'lit-html/directives/repeat.js';
 
 export class MyCategoriasTag extends LitElement {
     tags: any;
@@ -16,7 +16,7 @@ export class MyCategoriasTag extends LitElement {
     
       constructor() {
         super();
-        this.tags=  [];
+        this.tags=  ["cate 1", "cate2"];
     }
    
   
@@ -76,30 +76,27 @@ export class MyCategoriasTag extends LitElement {
         background: rgb(170, 169, 169); 
         width: 10rem;
         height: 16rem;
-        margin: 2vw;
+        margin: 
+        2vw;
     }
+    .categoria {
+      background: rgb(170, 169, 169); 
+      color: black;   
+      border: 1px solid black ;
+    }
+    .plus {
+      width: 5rem;
+    }
+
     `}
 
     _addTag(){
-        let emps = new Array<String>();
         this.tags.push("Categoria nueva");
         console.log("FIN ");
         console.log(this.tags);
-    
-
-        /*
-        for (let cards of emps) {
-            //console.log(cards.myNombre);
-        }
-
-        this.lista.forEach(emps => {
-            this.lista.push(emps);
-        });
-
-        console.log(this.lista);
-        */
-
     }
+
+    
     
     render() {
       return html`
@@ -119,15 +116,10 @@ export class MyCategoriasTag extends LitElement {
         <!--fontawesome-->
         <script src="https://use.fontawesome.com/e471b7b639.js"></script>
         <!--fontawesome-->
-                ${
-                    this.tags.map((item: String) => html`
-                        <button type="button" class="btn categoria" data-bs-toggle="tooltip"  title="categorias" disabled >
-                        ${item}
-                      </button>`)
-                }
-                <button type="button" class="btn categoria" data-bs-toggle="tooltip"  title="categorias" disabled >
-                  Categoria 1
-                </button>
+                <ul>
+                    ${this.tags.map((fruta: unknown) => html`<li>${fruta}</li>`)}
+                </ul>
+                
                 <button type="button" class="btn btn-secondary plus" data-bs-toggle="tooltip"  title="agregar categoria" onmouseover="mostrar('Agregar categoría')" onmouseout="quitar()" @click=${this._addTag}>
                     <i class="fa fa-plus"></i>
                 </button>

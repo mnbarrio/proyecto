@@ -1,31 +1,28 @@
 import { html, css, LitElement, property } from 'lit-element';
 import {MyCard} from '../src/MyCard';
 
+import {repeat} from 'lit-html/directives/repeat.js';
+
 export class MyIntegrantes extends LitElement {
-    listas: any;
-    //@property({ type: Array }) lista = new Array<MyCard>();
-    static get properties() { 
-        return { 
-            listas: { 
-                type: Array,
-                hasChanged(newVal: any,oldVal: any) {
-                    console.log(newVal);
-                    if( newVal != oldVal ){
-                        return true;
-                    } else {
-                        return false;
-                    }
-                }
-            }       
-        };
-      }
-    
-      constructor() {
-        super();
-        this.listas =  [];
+    //@property({ type: Array }) listas = new Array<MyCard>();
+    lista: Array<MyCard>;
+    contador: number;
+    idRemove: number;
+    static get properties() {
+        return {
+            lista: {type: Array },
+            contador: {type: Number},
+            idRemove: {type: Number},
+
+        }
     }
-   
-  
+    constructor() {
+        super();
+        this.lista = [new MyCard("Mauricio","12312313-k",0)];
+        this.contador = 1;
+        this.idRemove = -1;
+        
+    }
   static get styles(){
     return css`
       :host {
@@ -34,8 +31,6 @@ export class MyIntegrantes extends LitElement {
         font-size: 1vw;
         display:block;
         position: relative;
-        margin-right:auto;
-        margin-left:auto;
       }
       .row {
       border-top: 1px solid gray ;
@@ -86,42 +81,37 @@ export class MyIntegrantes extends LitElement {
     }
     `}
 
-    attributeChangedCallback(name: string, oldVal: string | null, newVal: string | null) {
-        console.log('attribute change: ', name, newVal);
-        super.attributeChangedCallback(name, oldVal, newVal);
-    }
 
-    changeProperties() {
-        this.listas.push(new MyCard("piter","rut"));
-        this.listas.update
-    }
+    _addCard(e:any){
 
-    
-    
-    _addCard(){
-        let emps = new Array<MyCard>();
-        this.listas.push(new MyCard("piter","rut"));
-        this.listas.map((e: any) => {
-            console.log(e)
+        //document.getElementById('id');
+        this.lista.push(new MyCard("Gonzalo","19787102-4",this.contador++));
+        
+        this.lista.map((e: any) => {
+            console.log("mapeo addcard",e.id)
         });
-        console.log("FIN ");
-        console.log(this.listas.hasChanged);
-
-
-        /*
-        for (let cards of emps) {
-            //console.log(cards.myNombre);
-        }
-
-        this.lista.forEach(emps => {
-            this.lista.push(emps);
-        });
-
-        console.log(this.lista);
-        */
-
+        
     }
     
+    _remove(e: any) {
+        let index = e.target.id;
+        console.log(index);
+        this.lista.map((e: MyCard) => {
+            if(e.id == index) {
+                console.log("elemento remove_ " ,e);
+                this.idRemove = this.lista.indexOf(e);
+            }
+        });
+        console.log("idRemove:",this.idRemove)
+        this.lista.map((e: any) => {
+            console.log("mapeo remove",e.id)
+        });
+        //let elementoEliminado = this.idRemove == 0 ? this.lista.shift() : this.lista.splice(this.idRemove,1);
+        let elementoEliminado = this.lista.splice(this.idRemove,1);
+        console.log("id eliminado",elementoEliminado[0].id);
+    }
+
+
     render() {
       return html`
         <!--header -->
@@ -140,30 +130,45 @@ export class MyIntegrantes extends LitElement {
         <!--fontawesome-->
         <script src="https://use.fontawesome.com/e471b7b639.js"></script>
         <!--fontawesome-->
-        <div class="row ">
-            ${
-                this.listas.map((item: MyCard) => html`<span> ${item.getNombre}</span>`)
-            }
-            ${this.listas.map((item: { getNombre: string; getRut: string; }) => 
-                    {
-                     return html`
-                    <div class="card">
-                        <div class="card-body ">
-                            <i class="fa fa-users"></i>
-                            <h5 class="card-title">${item.getNombre}</h5>
-                            <p class="card-text">${item.getRut}</p>
-                        </div>
+        
+            <div class="row ">
+                <div class="card card-block"  >
+                    <div class="card-body ">
+                        <h6>Agregar integrante</h6>
+                        
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="rut" name="rut" placeholder="Rut">
+                            </div>
+                            <button type="button" class="btn btn-primary" @click=${this._addCard}>Agregar</button>
+                        </form>
                     </div>
-                    `;
-                })
-                }
-            
-            <div class="card" title="Agregar nuevo integrante" @click=${this._addCard}>
-                <div class="agregar-card">
-                    <i class="fa fa-plus"></i>
                 </div>
+
+    
+            
+                ${ this.lista == [] ?
+                    html`` :
+
+                    repeat(this.lista, (employee) => employee.id, (employee, index) => 
+                    html`
+                        <div class="card card-block"  >
+                            <div class="card-body ">
+                                <i class="fa fa-users"></i>
+                                <h5 class="card-title">${employee.myNombre}</h5>
+                                <p class="card-text">${employee.myRut}</p>
+                                <button id="${employee.id}" type="button" class="btn btn-danger" @click=${this._remove}>Borrar</button>
+                            </div>
+                        </div>
+                `)
+            }
             </div>
-        </div>
+            
+        
+
       `;}
   }
   

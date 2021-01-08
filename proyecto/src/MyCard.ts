@@ -1,17 +1,12 @@
 export class MyCard {
     
-    private myNombre: string;
-    private myRut: string;
-    
-    constructor(nombre:string, rut:string) {
+     myNombre: string;
+     myRut: string;
+      id: number;
+    constructor(nombre:string, rut:string, id:number) {
         this.myNombre = nombre;
         this.myRut = rut;
-    }
-    getNombre() {
-        return this.myNombre;
-    }
-    getRut() {
-        return this.myRut;
+        this.id = id;
     }
 
   }
